@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <script src="js/jquery-3.6.0.js"></script>
+
+    <script>
+        $(function(){
+            const token = "IGQVJXeXVlWFJQblFFVU1ZAQVhYeHAxNUNQRnJ4T1N5aEd0cUFVb2pNeEw0MEs3QXlhcnNNcFpGV1g1YXZApeUI4aEh6dzd3T1JPT002MldKSklaVHdja05ZASTNza2NYWElzOWlwOUpXVnplNWdGdEctTwZDZD";
+            const url = "https://graph.instagram.com/me/media?access_token=" + token + "&fields=media_url,media_type,caption,permalink";
+
+            $.get(url).then(function(response){
+                console.log("agora: ", response.data);
+                let images = response.data;
+                let conteudo = "<div class='estilo_insta'>";
+
+                    for (let i = 0; i < 5; i++) {
+                        let feed = images[i];
+                        let titulo = feed.caption !== null ? feed.caption : "";
+                        let tipo = feed.media_type;
+                        if(tipo === "VIDEO"){
+
+                            conteudo += '<div class="img_insta"><video style = "width: 200px; height: 200px" controls><source src = "' + feed.media_url + '" type = "video/mp4"></video>"</div>';
+
+                        }else if(tipo === "IMAGE" || "CAROUSEL_ALBUM"){
+                            conteudo += '<div class="img_insta"><img title = "' + titulo + '" alt = "' + titulo + '" src = "' + feed.media_url + '" onclick="window.open(\'' + feed.permalink + '\');"></div>';
+                        }
+                        
+                    }
+
+                    conteudo += "<div class='insta'><img src='img/instagram.png'></div></div>";
+                    $("#insta").html(conteudo);
+            })
+
+        })
+
+    </script>
+
+    <style>
+
+        *{
+            margin: 0 auto;
+            padding: 0;
+        }
+        #insta{
+            width: 100vw;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(0, 0, 0);
+        }
+        
+        .estilo_insta{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: red;
+            flex-wrap: wrap;
+        }
+
+        .img_insta img{
+            margin-left: 10px;
+            margin-top: 10px;
+            width: 20vw;
+            height: 20vw;
+            transition: 1s;
+            border: 5px solid rgb(0, 195, 255);
+            cursor: pointer;
+        }
+
+        .insta{
+            margin-left: 10px;
+            margin-top: 10px;
+            width: 20vw;
+            height: 20vw;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border: 5px solid rgb(0, 195, 255);
+        }
+
+        .insta:hover{
+            transition: 1s;
+            filter: brightness(60%);
+        }
+        .estilo_insta img:hover{
+            transition: 1s;
+            filter: brightness(60%);
+        }
+
+        .insta img{
+            width: 5vw;
+            height: 5vw;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <h1>Instagra</h1><br><br>
+
+    <div id="insta">
+        
+    </div>
+    <script src="js/jquery-3.6.0.js"></script>
+
+</body>
+</html>
