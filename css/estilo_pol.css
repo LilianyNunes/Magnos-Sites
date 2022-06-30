@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'El Messiri', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;       
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: white;       
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: linear-gradient(#008aff 0%, rgb(0, 144, 233) 100%);   
+    border-radius: 20px;       
+    border: 3px solid rgb(255, 255, 255);  
+  }
+
+body{
+    background: linear-gradient(blue 0%, rgb(0, 183, 255) 50%, rgb(200, 200, 200) 100%);
+    /*background-image: url("../im/fundo.png");*/
+    background-attachment: fixed;
+    cursor: url(../img/mouse.cur), auto;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav img{
+    width: 400px;
+}
+#pol{
+    margin-top: 150px;
+    background-color: white;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+#pol2{
+    width: 70vw;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+p{
+    text-indent: 20px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 443px){
+
+    nav img{
+        width: 300px;
+    }
+
+
+    }
+    @media screen and (max-width: 335px){
+
+        nav img{
+            width: 90vw;
+        }
+    
+    
+        }
+    

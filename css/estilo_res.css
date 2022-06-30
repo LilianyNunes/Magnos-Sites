@@ -1,0 +1,1031 @@
+@media screen and (max-width: 1183px){
+    .nav li a{
+        font-size: 1em;
+    }
+
+    .textoimg h1{
+    font-size: 3em;
+    color: rgb(0, 225, 225);
+}
+
+.textoimg h2{
+    font-size: 1em;
+}
+}
+
+@media screen and (max-width: 1066px){
+
+    #circ{
+        width: 40vw;
+        height: 35vw;
+        background-color: white;
+        clip-path: ellipse(35vw 35vw at 0% 0%);
+    }
+
+    .marg{
+        width: 35vw;
+        height: 35vw;
+    }
+
+    .margp{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    #tt{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 986px){
+    .nav li a{
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 892px){
+    #contexto2{
+        width: 712px;
+    }
+}
+
+@media screen and (max-width: 800px){
+
+    header > div{
+        margin-top: 60px;
+    }
+
+    .tri img{
+        width: 60%;
+        height: 140px;
+        margin-top: -20px;
+    }
+    
+    .especial{
+        z-index: 100;
+        width: 40%;
+        height: 140px;
+        position: absolute;
+        clip-path: polygon(0 0, 0 100%, 100% 0);
+
+        background: linear-gradient(135deg, rgb(255, 255, 255) 0%, rgb(0, 166, 226) 50%, rgb(0, 195, 255) 100%);
+    }
+    .one, .three{
+        display: none;
+    }
+
+    #tri{
+        margin-top: -2px;
+        height: 784px;
+    }
+
+    .two, .four, #sep, #circ{
+        display: none;
+        
+    }
+    
+    #prim{
+        width: 54vw;
+    }
+    
+    .slide{
+        top: 200px;
+    }
+    .image article{
+        width: 54vw;
+        margin-left: 2vw;
+        margin-right: 44vw;
+        
+        text-shadow: none;
+        text-align: left;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+
+    }
+
+    .image article h1{
+        
+        text-transform: uppercase;
+        font-size: 1.5em;
+        width: 80vw;
+    }
+
+    .image article p{
+        font-size: 1em;
+        text-align: left;
+        width: 60vw;
+    }
+
+    .balls{
+        margin-left: 20vw;
+        margin-top: 50px;
+    }
+
+    .btn{
+        display: none;
+    }
+
+    .balls div:hover{
+        background-color: transparent;
+    }
+
+    #div_2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 60px;
+        margin-top: -60px;
+        transform: rotate(180deg);
+        background: white;
+        position: fixed;
+        border: transparent;
+        z-index: 100;
+    }
+
+    #div_2 img{
+        height: 40px;
+        transform: rotate(180deg);
+    }
+    
+    .buton{
+        position: fixed;
+        cursor: pointer;
+        margin-left: 75vw;
+        margin-top: -1px;
+        width: 20vw;
+        height: 42px;
+        animation: cor_um 1s 1;
+        background: linear-gradient(130deg, #002885 0%, rgb(0, 106, 192) 50%, rgb(0, 213, 255) 100%);
+        border-radius: 10px;
+        z-index: 1001;
+    }
+
+    .buton_tri{
+        margin-top: 8%;
+        display: inline-block;
+        margin-left: 30%;
+        border-top: 13px solid transparent;
+        border-bottom: 13px solid transparent;
+        border-left: 3vw solid #ffffff;
+    }
+    
+    .buton_tri2{
+        margin-top: 8%;
+        display: inline-block;
+        border-top: 13px solid transparent;
+        border-bottom: 13px solid transparent; 
+        border-right: 3vw solid #ffffff;
+    }
+
+    @keyframes cor_um {
+
+        100%{
+            background-color: #ffffff;
+        }
+
+        83%{
+            background-color: #d3f4ff;
+        }
+
+        66.4%{
+            background-color: #b3ecff;
+        }
+
+        49.8%{
+            background-color: #7bdeff;
+        }
+
+        33.2%{
+            background-color: #60d7ff;
+        }
+
+        16.6%{
+            background-color: #2bcaff;
+        }
+
+        0%{
+            background-color: #00BFFF;
+        }
+    }
+
+    .add{
+        margin-left: 82vw;
+        transition: all 100ms linear;
+        animation: cor_dois 1.3s both;
+        background: #00BFFF;
+    }
+
+    @keyframes cor_dois {
+
+        0%{
+            background-color: #00BFFF;
+        }
+
+        16.6%{
+            background-color: #0FB4E1;
+        }
+
+        33.2%{
+            background-color: #0f94e1;
+        }
+
+        49.8%{
+            background-color: #155ECB;
+        }
+
+        66.4%{
+            background-color: #0C47BD;
+        }
+
+        83%{
+            background-color: #0A41AD;
+        }
+
+        100%{
+            background-color: #00236a;
+        }
+    }
+
+        
+    #menu_p{
+        position: fixed;
+        top: auto;
+        margin-top: -1px;
+        background: transparent;
+        width: 80vw;
+        margin-left: 20vw;
+        z-index: 1000;
+        display: none;
+    
+    }
+
+    .nav{
+        float: right;
+        width: 80vw;
+        list-style: none;
+        padding: 0;
+        display: none;
+        height: auto;
+        
+    }
+
+    .nav li{
+        margin-top: -1px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        height: 42px;
+        display: block;
+        text-align: left;
+    }
+
+    .nav li:nth-child(1){
+        background-color: #0FB4E1;
+        width: 0vw;
+
+    }
+
+    .nav li:nth-child(2){
+        background-color: #0f94e1;
+        width: 0vw;
+        margin-left: 10vw;
+
+    }
+
+    .nav li:nth-child(3){
+        margin-top: -1px;
+        background-color: #155ECB;
+        width: 0vw;
+        margin-left: 20vw;
+
+    }
+
+    .nav li:nth-child(4){
+        background-color: #0C47BD;
+        width: 0vw;
+        margin-left: 30vw;
+    }
+
+    .nav li:nth-child(5){
+        background-color: #0A41AD;
+        width: 0vw;
+        margin-left: 40vw;
+
+    }
+
+    .nav li:nth-child(6){
+        background-color: #0037A2;
+        width: 0vw;
+        margin-left: 50vw;
+
+    }
+
+    .nav li a{
+        width: 100%;
+        opacity: 0;
+        text-transform: uppercase;
+        font-size: 1em;
+        color: white;
+        text-decoration: none;
+        padding: 1.5vw;
+        display: inline-block;
+        text-align: left;
+    }
+    
+    .nav li a:hover{
+        background: white;
+        color: white;
+        background: transparent;
+        box-shadow: none;
+        transition-delay: 0;
+        height: auto;
+        display: block;
+
+    }
+
+    .nav li a span{
+        display: none;
+    }
+
+    .nav li a span{
+        display: none;
+    }
+    .nav li a span:hover{
+        display: none;
+    }
+
+    .wave{
+        position: absolute;
+        width: 100vw;
+        height: 100px;
+        top: 745px;
+       
+       
+    }
+    
+    .wave#wave1
+    {
+        background: url("../img/wave.png");
+        background-size: 100vw 150px;
+        z-index: 1;
+       opacity: 1;
+       bottom: 0;
+        animation: animateWave 4s linear infinite;
+    }
+    
+    .wave#wave2
+    {
+        background: url("../img/wave2.png");
+        background-size: 100vw 150px;
+        z-index: 0.9;
+       opacity: 0.5;
+        bottom: 10px;
+        animation: animateWave_02 4s linear infinite;
+    }
+    
+    .wave#wave3
+    {
+        background: url("../img/wave3.png");
+        background-size: 100vw 150px;
+        z-index: 0.8;
+       opacity: 0.2;
+        bottom: 15px;
+        animation: animateWave 3s linear infinite;
+    }
+    
+    .wave#wave4
+    {
+        background: url("../img/wave3.png");
+        background-size: 100vw 150px;
+        z-index: 0.7;
+       opacity: 0.7;
+        bottom: 20px;
+        animation: animateWave_02 3s linear infinite;
+    }
+    
+
+    main{
+        top: 684px;
+    }
+
+    #contexto1{
+        margin-top: 50px;
+        z-index: 1;
+       position: absolute;
+        width: 95vw;
+        margin-left: 2.5vw;
+    }
+
+    #textone{
+        width: 80vw;
+        height: 210px;
+    }
+
+    #textone h1{
+        display: flex;
+        align-items: center;
+        width: 70vw;
+        height: 20vh;
+        color: black;
+        letter-spacing: 2px;
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    #contexto2{
+        margin-top: 600px;
+        width: 95vw;
+        margin-right: 2.5vw;
+    }
+
+    .triangulo{
+        display: none;
+    }
+
+    #fnd{
+        height: 780px;
+    }
+    #fig{
+        margin-top: 690px;
+        margin-left: auto;
+        width: 100vw;
+        align-items: flex-end;
+    }
+
+    #fig div{
+        margin-right: 2.5vw;
+        width: 95vw;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .graph{
+        height: 100px;
+        width: 100px;
+    }
+
+.gone > span, .gtwo > span, .gthree > span{
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.gone{
+    margin-left: 70vw;
+    margin-right: 20px;
+    top: 70px;
+}
+
+.gtwo{
+    margin-left: 70vw;
+    margin-right: 20px;
+    top: 265px;
+}
+
+.gthree{
+    margin-left: 70vw;
+    margin-right: 20px;
+    top: 460px;
+}
+
+#fig div p{
+    margin-left: 1vw;
+    width: 67vw;
+    height: 15vh;
+    font-size: 1.1em;
+}
+
+#faix{
+    height: 340px;
+    margin-top: 1350px;
+}
+
+
+.nn{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.eff{
+    width: 0;
+}
+
+#botao {
+    position: relative;
+    width: 100vw;
+    height: 700px;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxx
+{
+    position: absolute;
+    margin-left: 0;
+width: 90vw;
+height: 200px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.boxx span{
+position: absolute;
+border-radius: 50%;
+animation: animate 5s linear infinite;
+animation-delay: calc(0.7s * var(--i));
+
+}
+
+@keyframes animate {
+  0% {
+      width: 0vw;
+      height: 0px;
+  }
+
+  10% {
+      opacity: 1;
+  }
+
+  100% {
+     
+      width: 90vw;
+      height: 200px;
+      opacity: 0;
+  }
+}
+
+#lin{
+    height: 50px;
+    position: absolute;
+}
+
+.pp{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 300px;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+    text-align: justify;
+    color:rgb(255, 255, 255);
+    
+}
+
+#sobre_nos{
+    margin-top: 100px;
+}
+
+.parte1, .parte2{
+    width: 85vw;
+}
+
+.estil_1, .estil_2, .estil_3, .estil_4{
+    width: 20vw;
+    height: 15vw;
+}
+
+.estil_2{
+    margin-left: -2.5vw;
+}
+.estil_4{
+    margin-left: -4.05vw;
+}
+
+
+#beneficios{
+    display: none;
+
+}
+
+#bnf{
+    width: 85vw;
+    float: left;
+    margin-left: 7.5vw;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+#bnf2{
+    width: 85vw;
+    margin-right: 7.5vw;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+#bnf3{
+    width: 85vw;
+    right: 7.5vw;
+   
+}
+
+#divisao{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+
+#et{
+    height: 630px;
+    margin-top: 30px;
+    flex-direction: column;
+}
+
+.etapa{
+    width: 17vw;
+    height: 17vw;
+
+}
+
+.etapa img{
+    width: 12vw;
+}
+
+#etapas{
+    height: 600px;
+    width: 20%;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.linha{
+    
+    width: 5px;
+    height: 120px;
+    background-color: rgb(0, 191, 255);
+
+}
+.text{
+    height: 100px;
+    width: 90%;
+    padding-bottom: 2vw;
+    padding-top: 2vw;
+}
+#tex{
+    margin-top: 30px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#etapatext{
+    height: 600px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+    width: 80%;
+}
+
+
+#tempo{
+    box-shadow: 0 20px 8px rgb(0, 158, 202);
+    flex-direction: column;
+}
+
+.img_text img{
+    width: 30%;
+    transform: rotateX(90deg);
+    transition: 2s;
+}
+
+#tempotitle h1{
+    text-transform: uppercase;
+    color: rgb(0, 191, 255);
+    letter-spacing: 2px;
+    font-size: 1.5em;
+}
+
+#blockinsta{
+    margin-top: 50px;
+}
+
+#func h1{
+    font-size: 1.3em;
+}
+
+}
+
+@media screen and (max-width: 757px){
+    
+#spacef{
+   
+    margin-top: -400px;
+    width: 100vw;
+    height: 1050px;
+    position: absolute;
+    background: rgb(255, 255, 255);
+    z-index: -1;
+}
+
+#etapatitle{
+    margin-top: 180px;
+}
+
+}
+@media screen and (max-width: 727px){
+    .pensamento{
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 704px){
+    #dif_cont p{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 667px){
+    .pensamento{
+        font-size: 0.7em;
+    }
+
+    #efeito-pergunta1, #efeito-pergunta2, #efeito-pergunta3{
+        display: none;
+    }
+
+    .duvida{
+        width: 88vw;
+    }
+
+    .duvida p, .duvida h1{
+        width: 78vw;
+    }
+
+    .duvida1, .duvida2, .duvida3, .duvida4, .duvida5{
+        margin-left: 6vw;
+    }
+
+    .motivacional p{
+        font-size: 1em;
+    }
+
+}
+
+@media screen and (max-width: 618px){
+    
+.linha{
+    
+    width: 5px;
+    height: 50px;
+
+}
+
+.img_insta img, .vid_insta video{
+    width: 40vw;
+    height: 40vw;
+}
+
+.insta{
+    width: 40vw;
+    height: 40vw;
+}
+
+
+}
+@media screen and (max-width: 569px){
+
+    
+#diferenca{
+    width: 100vw;
+    height: 600px;
+    clip-path: circle(90% at 50% 15%);
+
+}
+
+.svg{
+    position: absolute;
+    width: 40vw;
+    margin-top: 70vw;
+   
+}
+
+.svg1{
+    margin-top: 73vw;
+    left: 58vw;
+}
+
+.svg2{
+    margin-top: 73vw;
+    left: 40vw;
+}
+
+.svg3{
+    transform: rotate(180deg);
+    margin-top: 68vw;
+    left: -5vw;
+}
+
+.imag img{
+    width: 20vw;
+   
+}
+
+.imag{
+    position: absolute;
+    margin-top: 81vw;
+}
+
+.imag1 {
+    left: 71vw;
+}
+
+.imag2{
+    left: 46vw;
+}
+
+.imag3{
+    margin-top: 84vw;
+    left: 9vw;
+}
+
+#diferenca > img{
+    width: 90vw;
+}
+
+.pensamento{
+    margin-top: calc(15vw + 30px);
+    margin-left: 25vw;
+    width: 51vw;
+    height: 46vw;
+    font-size: 1em;
+}
+
+}
+
+@media screen and (max-width: 520px){
+
+    #dtl{
+        display: none;
+        
+    }
+
+    .ret{
+        display: none;
+    }
+
+    #dif_cont{
+        width: 90vw;
+        margin-left: 5vw;
+    }
+
+    #dif_cont p{
+        width: 78vw;
+        font-size: 1.3em;
+    }
+
+    .linha{
+    
+        width: 5px;
+        height: 80px;
+    
+    }
+
+    #tempotitle h1{
+        text-transform: uppercase;
+        color: rgb(0, 191, 255);
+        letter-spacing: 2px;
+        font-size: 1.3em;
+    }
+
+}
+
+@media screen and (max-width: 566px){
+    #etapatitle{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 486px){
+
+    .text{
+        width: 90%;
+        padding-bottom: 1vw;
+        padding-top: 1vw;
+        font-size:0.7em;
+    }
+    .motivacional p{
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 458px){
+
+    
+#comparacao{
+    height: 110px;
+    
+}
+
+.comp1, .comp2{
+    height: 90px;
+    
+
+}
+
+}
+
+@media screen and (max-width: 438px){
+    .linha{
+    
+        width: 5px;
+        height: 100px;
+    
+    }
+}
+@media screen and (max-width: 428px){
+
+    .pp{
+        font-size: 1.2em;
+        
+    }
+
+    form{
+        width: 350px;
+    }
+
+    legend{
+        width: 325px;
+    }
+
+    input{
+        width: 250px;
+    }
+
+    #numero{
+        width: 200px;
+    }
+
+    select{
+        width: 250px;
+    }
+
+}
+
+@media screen and (max-width: 425px){
+    
+#fig div p{
+    margin-left: 1vw;
+    width: 65vw;
+    height: 15vh;
+    font-size: 1.1em;
+}
+
+}
+
+@media screen and (max-width: 420px){
+
+.pensamento{
+    font-size: 0.9em;
+}
+
+#textone h1{
+    font-size: 1.1em;
+}
+
+#tempotitle h1{
+    text-transform: uppercase;
+    color: rgb(0, 191, 255);
+    letter-spacing: 2px;
+    font-size: 1.4em;
+}
+
+
+}
+
+@media screen and (max-width: 496px){
+    #tempotitle h1{
+        text-transform: uppercase;
+        color: rgb(0, 191, 255);
+        letter-spacing: 2px;
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 390px){
+  
+    #faix{
+        height: 600px;
+    }
+
+    .text{
+        width: 90%;
+        padding-top: 1vw;
+        font-size:0.6em;
+    }
+
+}
+
+@media screen and (max-width: 387px){
+    
+.pensamento{
+    font-size: 0.8em;
+}
+}
